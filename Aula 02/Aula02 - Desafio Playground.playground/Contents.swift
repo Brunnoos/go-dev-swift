@@ -8,11 +8,7 @@ class Stack<T: Any> {
     init(_ capacity: Int) {
         self.capacity = capacity
         top = -1
-        elems = []
-        
-        for _ in 0..<capacity {
-            elems.append(nil)
-        }
+        elems = Array(repeating: nil, count: capacity)
     }
     
     func push(element : T) {

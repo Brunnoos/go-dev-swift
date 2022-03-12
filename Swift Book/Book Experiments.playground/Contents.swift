@@ -198,3 +198,21 @@ func makeArray<Item>(baseItem: Item, _ numberOfTimes : Int) -> [Item] {
 }
 
 print(makeArray(baseItem: "Teste", 4))
+
+func union<T: Sequence, U: Sequence>(_ lhs : T, _ rhs : U) -> [T.Element]
+where T.Element: Equatable, T.Element == U.Element
+{
+    var result : [T.Element] = []
+    
+    for lhsItem in lhs {
+        for rhsItem in rhs {
+            if (lhsItem == rhsItem && !result.contains(lhsItem)) {
+                result.append(lhsItem)
+            }
+        }
+    }
+    
+    return result
+}
+
+union([0, 2, 3, 5, 7, 8], [1, 3, 4, 5])

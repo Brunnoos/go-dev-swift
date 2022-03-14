@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculo_IMC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzN-ZP-UI7" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imcHeader" translatesAutoresizingMaskIntoConstraints="NO" id="Q7R-Qs-bio">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uh7-dF-ifs" userLabel="TitleView">
+                                        <rect key="frame" x="87" y="230" width="240" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cálculo IMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob4-Vw-LY0">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="70"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Ob4-Vw-LY0" firstAttribute="leading" secondItem="uh7-dF-ifs" secondAttribute="leading" id="5Xw-Sb-Rzj"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ob4-Vw-LY0" secondAttribute="trailing" id="KWj-LU-t0K"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ob4-Vw-LY0" secondAttribute="bottom" id="YMY-Dt-d2B"/>
+                                            <constraint firstItem="Ob4-Vw-LY0" firstAttribute="top" secondItem="uh7-dF-ifs" secondAttribute="top" id="oMs-o3-2D7"/>
+                                            <constraint firstAttribute="height" constant="70" id="oPm-er-iiO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Q7R-Qs-bio" secondAttribute="bottom" id="AWe-5R-KrT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q7R-Qs-bio" secondAttribute="trailing" id="Atb-Bo-D30"/>
+                                    <constraint firstAttribute="bottom" secondItem="uh7-dF-ifs" secondAttribute="bottom" id="EdS-GE-UH3"/>
+                                    <constraint firstAttribute="height" constant="300" id="Eko-Zt-ewC"/>
+                                    <constraint firstItem="Q7R-Qs-bio" firstAttribute="top" secondItem="AzN-ZP-UI7" secondAttribute="top" id="YFj-AJ-zaw"/>
+                                    <constraint firstItem="uh7-dF-ifs" firstAttribute="leading" secondItem="AzN-ZP-UI7" secondAttribute="leading" constant="87" id="hFw-AY-iLm"/>
+                                    <constraint firstAttribute="trailing" secondItem="uh7-dF-ifs" secondAttribute="trailing" constant="87" id="mNs-te-sqT"/>
+                                    <constraint firstItem="Q7R-Qs-bio" firstAttribute="leading" secondItem="AzN-ZP-UI7" secondAttribute="leading" id="z7h-bL-COM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRF-dM-zRX">
+                                <rect key="frame" x="174" y="470" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXi-1O-cyZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AzN-ZP-UI7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9ZZ-1J-coG"/>
+                            <constraint firstItem="AzN-ZP-UI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VSK-hd-abe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AzN-ZP-UI7" secondAttribute="trailing" id="s0s-F6-nhj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imcHeader" width="976" height="549"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

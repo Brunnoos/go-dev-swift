@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,74 +13,78 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Aula_05" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tm-1Z-gS9">
-                                <rect key="frame" x="50" y="234" width="314" height="20.666666666666657"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="sti-6L-w86">
+                                <rect key="frame" x="50" y="52" width="220" height="208"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tm-1Z-gS9">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="5AR-am-bsj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-em-pzt" userLabel="Email Field">
+                                        <rect key="frame" x="0.0" y="37.5" width="220" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="qN6-0u-21S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe sua Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6o-F4-SZ9">
+                                        <rect key="frame" x="0.0" y="88.5" width="220" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="IXF-td-ZgV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O2Y-MM-fQd" userLabel="Passwordl Field">
+                                        <rect key="frame" x="0.0" y="126.5" width="220" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="iAT-44-Sz9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boX-Xu-CYu" userLabel="Logar">
+                                        <rect key="frame" x="48" y="177.5" width="124" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="keP-tP-wZF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Logar"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2I-PP-fX0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20.5" id="5AR-am-bsj"/>
+                                    <constraint firstAttribute="trailing" secondItem="boX-Xu-CYu" secondAttribute="trailing" priority="750" constant="95" id="MTp-g0-Lrd"/>
+                                    <constraint firstAttribute="trailing" secondItem="k6o-F4-SZ9" secondAttribute="trailing" id="N77-73-03X"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Tm-1Z-gS9" secondAttribute="trailing" id="X57-vE-LGu"/>
+                                    <constraint firstItem="2Tm-1Z-gS9" firstAttribute="leading" secondItem="sti-6L-w86" secondAttribute="leading" id="XXr-5g-iKb"/>
+                                    <constraint firstAttribute="trailing" secondItem="O2Y-MM-fQd" secondAttribute="trailing" id="ceM-MJ-Ptp"/>
+                                    <constraint firstItem="boX-Xu-CYu" firstAttribute="centerX" secondItem="sti-6L-w86" secondAttribute="centerX" id="nbf-qk-D5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="CwB-em-pzt" secondAttribute="trailing" id="pYL-1A-dm0"/>
+                                    <constraint firstItem="k6o-F4-SZ9" firstAttribute="leading" secondItem="sti-6L-w86" secondAttribute="leading" id="s2S-t4-gTv"/>
+                                    <constraint firstItem="boX-Xu-CYu" firstAttribute="leading" secondItem="sti-6L-w86" secondAttribute="leading" priority="750" constant="95" id="sZD-1N-ggV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-em-pzt" userLabel="Email Field">
-                                <rect key="frame" x="50" y="263" width="314" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="qN6-0u-21S"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe sua Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6o-F4-SZ9">
-                                <rect key="frame" x="50" y="317" width="314" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="IXF-td-ZgV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O2Y-MM-fQd" userLabel="Passwordl Field">
-                                <rect key="frame" x="50" y="346.66666666666669" width="314" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="iAT-44-Sz9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boX-Xu-CYu" userLabel="Logar">
-                                <rect key="frame" x="145" y="413" width="124" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="Rvp-aI-NHG"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="keP-tP-wZF"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Logar"/>
-                                <connections>
-                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2I-PP-fX0"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2Tm-1Z-gS9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="750" constant="190" id="0LQ-fG-MwA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CwB-em-pzt" secondAttribute="trailing" constant="50" id="13C-zd-gbS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Tm-1Z-gS9" secondAttribute="trailing" constant="50" id="1wk-zQ-FaE"/>
-                            <constraint firstItem="CwB-em-pzt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="CDv-iy-gBB"/>
-                            <constraint firstItem="CwB-em-pzt" firstAttribute="top" secondItem="2Tm-1Z-gS9" secondAttribute="bottom" constant="8.5" id="CUe-XI-fkW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O2Y-MM-fQd" secondAttribute="trailing" constant="50" id="M78-fE-rlu"/>
-                            <constraint firstItem="boX-Xu-CYu" firstAttribute="top" secondItem="O2Y-MM-fQd" secondAttribute="bottom" constant="32.5" id="QcR-hB-Re8"/>
-                            <constraint firstItem="k6o-F4-SZ9" firstAttribute="top" secondItem="CwB-em-pzt" secondAttribute="bottom" constant="20" id="R0A-lP-Sj8"/>
-                            <constraint firstItem="boX-Xu-CYu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XvY-TO-RH0"/>
-                            <constraint firstItem="2Tm-1Z-gS9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Yfd-PF-Fy0"/>
-                            <constraint firstItem="O2Y-MM-fQd" firstAttribute="top" secondItem="k6o-F4-SZ9" secondAttribute="bottom" constant="8.5" id="b87-Ed-10g"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Tm-1Z-gS9" secondAttribute="bottom" constant="400" id="gCY-i8-bag"/>
-                            <constraint firstItem="k6o-F4-SZ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="iMg-fM-Gcv"/>
-                            <constraint firstItem="O2Y-MM-fQd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="pfs-1K-3xJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k6o-F4-SZ9" secondAttribute="trailing" constant="50" id="q0e-9D-Ghg"/>
+                            <constraint firstItem="sti-6L-w86" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="2Id-U2-H44"/>
+                            <constraint firstItem="sti-6L-w86" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="750" constant="100" id="Leq-w4-Q0r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sti-6L-w86" secondAttribute="trailing" constant="50" id="Ojm-LD-Xuw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sti-6L-w86" secondAttribute="bottom" constant="220" id="rkJ-jI-qq6"/>
                         </constraints>
                     </view>
                     <connections>

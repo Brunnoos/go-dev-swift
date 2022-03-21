@@ -69,6 +69,16 @@ class ViewController: UIViewController {
         
         splashCollectionView.showsHorizontalScrollIndicator = false
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CarViewSegue" {
+            if let carViewController = segue.destination as? CarViewController,
+                let senderData = sender as? CarCell {
+                print(senderData)
+                carViewController.configureScreenData(carData: senderData)
+            }
+        }
+    }
 }
 
 // Collection Cells
@@ -97,6 +107,15 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == splashCollectionView {
+            performSegue(withIdentifier: "CarViewSegue", sender: cars[indexPath.row])
+        }
+        else if collectionView == self.collectionView {
+            performSegue(withIdentifier: "CarViewSegue", sender: cars[indexPath.row + 2])
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {

@@ -17,6 +17,7 @@
 		9978DF1627E014F6000CFA6F /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9978DF1427E014F6000CFA6F /* CustomCollectionViewCell.xib */; };
 		997F7BCF27E1447700E99460 /* SplashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997F7BCD27E1447700E99460 /* SplashCollectionViewCell.swift */; };
 		997F7BD027E1447700E99460 /* SplashCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997F7BCE27E1447700E99460 /* SplashCollectionViewCell.xib */; };
+		9991EA8527E2908E00152270 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9991EA8427E2908E00152270 /* CarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9978DF1427E014F6000CFA6F /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		997F7BCD27E1447700E99460 /* SplashCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionViewCell.swift; sourceTree = "<group>"; };
 		997F7BCE27E1447700E99460 /* SplashCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashCollectionViewCell.xib; sourceTree = "<group>"; };
+		9991EA8427E2908E00152270 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				9978DEF527DFF2F2000CFA6F /* AppDelegate.swift */,
 				9978DEF727DFF2F2000CFA6F /* SceneDelegate.swift */,
 				9978DEF927DFF2F2000CFA6F /* ViewController.swift */,
+				9991EA8427E2908E00152270 /* CarViewController.swift */,
 				9978DEFB27DFF2F2000CFA6F /* Main.storyboard */,
 				9978DEFE27DFF2F3000CFA6F /* Assets.xcassets */,
 				9978DF0027DFF2F3000CFA6F /* LaunchScreen.storyboard */,
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				997F7BCF27E1447700E99460 /* SplashCollectionViewCell.swift in Sources */,
+				9991EA8527E2908E00152270 /* CarViewController.swift in Sources */,
 				9978DEFA27DFF2F2000CFA6F /* ViewController.swift in Sources */,
 				9978DEF627DFF2F2000CFA6F /* AppDelegate.swift in Sources */,
 				9978DEF827DFF2F2000CFA6F /* SceneDelegate.swift in Sources */,

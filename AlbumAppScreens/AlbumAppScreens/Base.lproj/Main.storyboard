@@ -51,7 +51,6 @@
         <!--Album Detail View Controller-->
         <scene sceneID="XWt-bv-uhh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fo-Nf-hXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="7TP-6I-9jX" customClass="AlbumDetailViewController" customModule="AlbumAppScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aE8-Mq-Bp3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -160,6 +159,7 @@
                         <outlet property="albumTrackListView" destination="M3h-hn-M3W" id="SRD-pa-UXA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fo-Nf-hXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3473.913043478261" y="-282.58928571428572"/>
         </scene>
@@ -169,6 +169,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XI4-hb-kQe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aFK-5c-CyT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

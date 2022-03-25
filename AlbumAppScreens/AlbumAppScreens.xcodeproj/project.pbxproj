@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99B3935927E93EA400D047FD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B3935727E93E7500D047FD /* CoreData.framework */; };
+		99B3935A27E93EA400D047FD /* CoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99B3935727E93E7500D047FD /* CoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99EE049327E6086D00C2CB84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE049227E6086D00C2CB84 /* AppDelegate.swift */; };
 		99EE049527E6086D00C2CB84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE049427E6086D00C2CB84 /* SceneDelegate.swift */; };
 		99EE049727E6086D00C2CB84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE049627E6086D00C2CB84 /* ViewController.swift */; };
@@ -22,7 +24,22 @@
 		99EE04C027E6233500C2CB84 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE04BF27E6233500C2CB84 /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		99B3935B27E93EA400D047FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99B3935A27E93EA400D047FD /* CoreData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		99B3935727E93E7500D047FD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		99EE048F27E6086D00C2CB84 /* AlbumAppScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumAppScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EE049227E6086D00C2CB84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99EE049427E6086D00C2CB84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,17 +62,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B3935927E93EA400D047FD /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99B3935627E93E7400D047FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99B3935727E93E7500D047FD /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99EE048627E6086D00C2CB84 = {
 			isa = PBXGroup;
 			children = (
 				99EE049127E6086D00C2CB84 /* AlbumAppScreens */,
 				99EE049027E6086D00C2CB84 /* Products */,
+				99B3935627E93E7400D047FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +157,7 @@
 				99EE048B27E6086D00C2CB84 /* Sources */,
 				99EE048C27E6086D00C2CB84 /* Frameworks */,
 				99EE048D27E6086D00C2CB84 /* Resources */,
+				99B3935B27E93EA400D047FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

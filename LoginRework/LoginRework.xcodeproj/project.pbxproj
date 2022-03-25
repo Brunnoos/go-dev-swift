@@ -24,7 +24,7 @@
 		9979312A27ED1D0A0086FAA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9979312D27ED1D0A0086FAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9979312F27ED1D0A0086FAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9979313527ED1D6D0086FAA0 /* InputUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputUILabel.swift; path = ../../LoginViewCode/LoginViewCode/InputUILabel.swift; sourceTree = "<group>"; };
+		9979313527ED1D6D0086FAA0 /* InputUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputUILabel.swift; sourceTree = "<group>"; };
 		9979313727ED24530086FAA0 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

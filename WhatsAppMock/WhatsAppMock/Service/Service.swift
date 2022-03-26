@@ -14,7 +14,7 @@ enum FriendRequestError: Error {
 }
 
 protocol ServiceProtocol {
-    func getProfile(completion: @escaping(Result<Profile, FriendRequestError>) -> Void)
+    func getProfile(completion: @escaping(Result<Welcome, FriendRequestError>) -> Void)
 }
 
 class Service: ServiceProtocol {
@@ -27,7 +27,7 @@ class Service: ServiceProtocol {
         return instance
     }()
     
-    func getProfile(completion: @escaping (Result<Profile, FriendRequestError>) -> Void) {
+    func getProfile(completion: @escaping (Result<Welcome, FriendRequestError>) -> Void) {
         guard let url = URL(string: url) else { return completion(.failure(.URLError))}
         
         let dataTask = session.dataTask(with: url) { data, _, _ in
@@ -40,7 +40,7 @@ class Service: ServiceProtocol {
                 
                 let userResponse = try decoder.decode(Welcome.self, from: jsonData)
                 
-                completion(.success(userResponse.profile))
+                completion(.success(userResponse))
             } catch {
                 completion(.failure(.DecoderError))
             }

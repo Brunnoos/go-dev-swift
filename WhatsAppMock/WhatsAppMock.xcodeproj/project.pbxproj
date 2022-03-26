@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		999542CE27EF390F0054DFE7 /* FriendContactTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999542CD27EF390F0054DFE7 /* FriendContactTableCell.swift */; };
 		99A09BF327EE835300E3F4AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A09BF227EE835300E3F4AD /* AppDelegate.swift */; };
 		99A09BF527EE835300E3F4AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A09BF427EE835300E3F4AD /* SceneDelegate.swift */; };
 		99A09BF727EE835300E3F4AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A09BF627EE835300E3F4AD /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		999542CD27EF390F0054DFE7 /* FriendContactTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendContactTableCell.swift; sourceTree = "<group>"; };
 		99A09BEF27EE835300E3F4AD /* WhatsAppMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A09BF227EE835300E3F4AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A09BF427EE835300E3F4AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				99A09C0727EE83F400E3F4AD /* ChatLogTableCell.swift */,
+				999542CD27EF390F0054DFE7 /* FriendContactTableCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				99A09BF727EE835300E3F4AD /* ViewController.swift in Sources */,
 				99A09C1127EE8FAA00E3F4AD /* NewMessageViewController.swift in Sources */,
 				99A09BF327EE835300E3F4AD /* AppDelegate.swift in Sources */,
+				999542CE27EF390F0054DFE7 /* FriendContactTableCell.swift in Sources */,
 				99A09C1C27EE98A900E3F4AD /* UIImageView+extensions.swift in Sources */,
 				99A09C1E27EE999100E3F4AD /* UserData.swift in Sources */,
 				99A09BF527EE835300E3F4AD /* SceneDelegate.swift in Sources */,

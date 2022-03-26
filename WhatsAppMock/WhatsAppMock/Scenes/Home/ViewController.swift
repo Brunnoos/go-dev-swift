@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     private var safeArea: UILayoutGuide!
     
     var profile: Profile?
+    var allFriends: [Profile]?
     
     // MARK: - Lazy Properties
     
@@ -78,6 +79,10 @@ class ViewController: UIViewController {
     @objc func showNewMessageView() {
         let newMessageView = NewMessageViewController()
         
+        if let allFriends = allFriends {
+            newMessageView.onCallView(allFriends: allFriends)
+        }
+        
         navigationController?.present(newMessageView, animated: true, completion: nil)
     }
 
@@ -86,8 +91,9 @@ class ViewController: UIViewController {
     private func getProfileData() {
         Service.shared.getProfile { result in
             switch result {
-            case .success(let profile):
-                self.profile = profile
+            case .success(let welcome):
+                self.profile = welcome.profile
+                self.allFriends = welcome.allFriends
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
